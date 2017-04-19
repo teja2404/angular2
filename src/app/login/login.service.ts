@@ -15,7 +15,7 @@ export class LoginService {
     constructor(private http: Http) { }
     getUsers() {
         return new Promise(resolve => {
-            this.http.get(this.urlgit)
+            this.http.get(this.url)
                 .subscribe((res: Response) => {
                     this.data = res.json();
                     resolve(this.data)
